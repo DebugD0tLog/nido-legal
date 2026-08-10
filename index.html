@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Documents légaux — Nido</title>
+<meta name="description" content="Politique de confidentialité et conditions générales d'utilisation de l'application Nido." />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#208AEF" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0d1218" media="(prefers-color-scheme: dark)" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Documents légaux — Nido" />
+<meta property="og:description" content="Politique de confidentialité et conditions générales d'utilisation de l'application Nido." />
+<meta property="og:locale" content="fr_FR" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23208AEF'/%3E%3Cpath d='M9 22V10l14 12V10' stroke='white' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<style>:root {
+  color-scheme: light dark;
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --text: #14202e;
+  --muted: #5a6b80;
+  --line: #dfe6ef;
+  --brand: #1b6fd0;
+  --brand-soft: #eaf2fd;
+  --code-bg: #eef2f7;
+  --shadow: 0 1px 2px rgba(20, 32, 46, .05), 0 12px 32px rgba(20, 32, 46, .06);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1218;
+    --surface: #151c25;
+    --text: #e7edf5;
+    --muted: #97a6b8;
+    --line: #26313d;
+    --brand: #6dabf5;
+    --brand-soft: #17263a;
+    --code-bg: #1d262f;
+    --shadow: none;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.15rem 5rem; }
+
+header.site {
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+header.site .wrap { padding-top: 1.5rem; padding-bottom: 0; }
+.brand {
+  display: inline-flex; align-items: center; gap: .6rem;
+  font-weight: 700; font-size: 1.15rem; letter-spacing: -.01em;
+  color: var(--text); text-decoration: none;
+}
+.brand .dot {
+  width: 1.6rem; height: 1.6rem; border-radius: .55rem;
+  background: linear-gradient(140deg, #3c87f7, #1b6fd0);
+  display: inline-block;
+}
+nav.docs { display: flex; gap: .35rem; margin-top: 1.15rem; flex-wrap: wrap; }
+nav.docs a {
+  padding: .5rem .85rem; border-radius: .55rem .55rem 0 0;
+  font-size: .93rem; font-weight: 600; text-decoration: none;
+  color: var(--muted); border: 1px solid transparent; border-bottom: none;
+}
+nav.docs a:hover { color: var(--text); }
+nav.docs a[aria-current="page"] {
+  color: var(--brand); background: var(--bg);
+  border-color: var(--line); margin-bottom: -1px;
+}
+
+main { margin-top: 2.25rem; }
+h1 {
+  font-size: clamp(1.65rem, 5vw, 2.15rem); line-height: 1.2;
+  letter-spacing: -.02em; margin: 0 0 .6rem;
+}
+h2 {
+  font-size: 1.22rem; letter-spacing: -.01em;
+  margin: 2.6rem 0 .75rem; padding-top: .35rem;
+  scroll-margin-top: 1rem;
+}
+h3 { font-size: 1.03rem; margin: 1.7rem 0 .5rem; color: var(--text); }
+p { margin: 0 0 1rem; }
+a { color: var(--brand); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+strong { font-weight: 650; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2.4rem 0; }
+ul, ol { margin: 0 0 1rem; padding-left: 1.3rem; }
+li { margin: .3rem 0; }
+li::marker { color: var(--muted); }
+code {
+  background: var(--code-bg); border-radius: .3rem;
+  padding: .12em .38em; font-size: .88em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  overflow-wrap: anywhere;
+}
+blockquote {
+  margin: 1.2rem 0; padding: .85rem 1.1rem;
+  background: var(--brand-soft); border-left: 3px solid var(--brand);
+  border-radius: 0 .5rem .5rem 0;
+}
+blockquote p { margin: 0; }
+
+.table-wrap {
+  overflow-x: auto; margin: 1.2rem 0;
+  border: 1px solid var(--line); border-radius: .7rem;
+  background: var(--surface);
+}
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { text-align: left; padding: .65rem .85rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 650; background: var(--brand-soft); white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+
+/* Mobile : le tableau devient une pile de blocs libellés. */
+@media (max-width: 33rem) {
+  .table-wrap { overflow-x: visible; background: transparent; border: 0; border-radius: 0; }
+  table, tbody, tr, td { display: block; width: 100%; }
+  thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  tr {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: .7rem; padding: .35rem .2rem; margin-bottom: .7rem;
+  }
+  tr:last-child { margin-bottom: 0; }
+  td { border-bottom: 0; padding: .35rem .85rem; }
+  td[data-label]::before {
+    content: attr(data-label);
+    display: block; font-size: .75rem; font-weight: 650;
+    text-transform: uppercase; letter-spacing: .04em;
+    color: var(--muted); margin-bottom: .1rem;
+  }
+  td:first-child { padding-top: .6rem; }
+  td:last-child { padding-bottom: .6rem; }
+}
+
+.updated {
+  display: inline-block; font-size: .87rem; color: var(--muted);
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 999px; padding: .2rem .75rem; margin-bottom: 1.6rem;
+}
+.toc {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: .8rem; padding: .9rem 1.1rem; margin: 0 0 2rem;
+  box-shadow: var(--shadow);
+}
+.toc summary { cursor: pointer; font-weight: 650; font-size: .95rem; }
+.toc ol { margin: .8rem 0 .2rem; padding-left: 1.2rem; font-size: .95rem; }
+.toc li { margin: .2rem 0; }
+
+footer.site {
+  margin-top: 3.5rem; padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-size: .88rem; color: var(--muted);
+}
+footer.site p { margin: .25rem 0; }
+
+/* Cartes de l'accueil */
+.cards { display: grid; gap: .9rem; margin: 2rem 0; }
+@media (min-width: 34rem) { .cards { grid-template-columns: 1fr 1fr; } }
+.card {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: .9rem; padding: 1.15rem 1.2rem; box-shadow: var(--shadow);
+}
+.card:hover { border-color: var(--brand); }
+.card h2 { margin: 0 0 .35rem; font-size: 1.05rem; color: var(--brand); padding: 0; }
+.card p { margin: 0; font-size: .93rem; color: var(--muted); }</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="dot"></span>Nido</a>
+    <nav class="docs"><a href="privacy.html">Confidentialité</a><a href="terms.html">CGU</a></nav>
+  </div>
+</header>
+<div class="wrap">
+<main>
+<h1>Documents légaux</h1>
+<p>Nido est une application mobile qui aide les parents à suivre le quotidien
+de leur bébé — tétées, couches, sommeil, croissance, santé — et à rester
+synchronisés à deux.</p>
+<div class="cards"><a class="card" href="privacy.html"><h2>Politique de confidentialité</h2><p>Comment l'application Nido collecte, utilise et protège tes données et celles de ton bébé.</p></a><a class="card" href="terms.html"><h2>Conditions générales d'utilisation</h2><p>Les règles d'usage de l'application Nido.</p></a></div>
+<p>Une question sur tes données ? Écris à
+<a href="mailto:support@nido-app.com">support@nido-app.com</a>.</p>
+</main>
+<footer class="site">
+  <p>Nido — application de suivi du quotidien de bébé.</p>
+  <p>Contact : <a href="mailto:support@nido-app.com">support@nido-app.com</a></p>
+</footer>
+</div>
+</body>
+</html>

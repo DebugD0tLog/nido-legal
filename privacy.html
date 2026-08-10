@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Politique de confidentialité — Nido</title>
+<meta name="description" content="Comment l'application Nido collecte, utilise et protège tes données et celles de ton bébé." />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#208AEF" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0d1218" media="(prefers-color-scheme: dark)" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Politique de confidentialité — Nido" />
+<meta property="og:description" content="Comment l'application Nido collecte, utilise et protège tes données et celles de ton bébé." />
+<meta property="og:locale" content="fr_FR" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23208AEF'/%3E%3Cpath d='M9 22V10l14 12V10' stroke='white' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<style>:root {
+  color-scheme: light dark;
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --text: #14202e;
+  --muted: #5a6b80;
+  --line: #dfe6ef;
+  --brand: #1b6fd0;
+  --brand-soft: #eaf2fd;
+  --code-bg: #eef2f7;
+  --shadow: 0 1px 2px rgba(20, 32, 46, .05), 0 12px 32px rgba(20, 32, 46, .06);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1218;
+    --surface: #151c25;
+    --text: #e7edf5;
+    --muted: #97a6b8;
+    --line: #26313d;
+    --brand: #6dabf5;
+    --brand-soft: #17263a;
+    --code-bg: #1d262f;
+    --shadow: none;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.15rem 5rem; }
+
+header.site {
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+header.site .wrap { padding-top: 1.5rem; padding-bottom: 0; }
+.brand {
+  display: inline-flex; align-items: center; gap: .6rem;
+  font-weight: 700; font-size: 1.15rem; letter-spacing: -.01em;
+  color: var(--text); text-decoration: none;
+}
+.brand .dot {
+  width: 1.6rem; height: 1.6rem; border-radius: .55rem;
+  background: linear-gradient(140deg, #3c87f7, #1b6fd0);
+  display: inline-block;
+}
+nav.docs { display: flex; gap: .35rem; margin-top: 1.15rem; flex-wrap: wrap; }
+nav.docs a {
+  padding: .5rem .85rem; border-radius: .55rem .55rem 0 0;
+  font-size: .93rem; font-weight: 600; text-decoration: none;
+  color: var(--muted); border: 1px solid transparent; border-bottom: none;
+}
+nav.docs a:hover { color: var(--text); }
+nav.docs a[aria-current="page"] {
+  color: var(--brand); background: var(--bg);
+  border-color: var(--line); margin-bottom: -1px;
+}
+
+main { margin-top: 2.25rem; }
+h1 {
+  font-size: clamp(1.65rem, 5vw, 2.15rem); line-height: 1.2;
+  letter-spacing: -.02em; margin: 0 0 .6rem;
+}
+h2 {
+  font-size: 1.22rem; letter-spacing: -.01em;
+  margin: 2.6rem 0 .75rem; padding-top: .35rem;
+  scroll-margin-top: 1rem;
+}
+h3 { font-size: 1.03rem; margin: 1.7rem 0 .5rem; color: var(--text); }
+p { margin: 0 0 1rem; }
+a { color: var(--brand); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+strong { font-weight: 650; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2.4rem 0; }
+ul, ol { margin: 0 0 1rem; padding-left: 1.3rem; }
+li { margin: .3rem 0; }
+li::marker { color: var(--muted); }
+code {
+  background: var(--code-bg); border-radius: .3rem;
+  padding: .12em .38em; font-size: .88em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  overflow-wrap: anywhere;
+}
+blockquote {
+  margin: 1.2rem 0; padding: .85rem 1.1rem;
+  background: var(--brand-soft); border-left: 3px solid var(--brand);
+  border-radius: 0 .5rem .5rem 0;
+}
+blockquote p { margin: 0; }
+
+.table-wrap {
+  overflow-x: auto; margin: 1.2rem 0;
+  border: 1px solid var(--line); border-radius: .7rem;
+  background: var(--surface);
+}
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { text-align: left; padding: .65rem .85rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 650; background: var(--brand-soft); white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+
+/* Mobile : le tableau devient une pile de blocs libellés. */
+@media (max-width: 33rem) {
+  .table-wrap { overflow-x: visible; background: transparent; border: 0; border-radius: 0; }
+  table, tbody, tr, td { display: block; width: 100%; }
+  thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  tr {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: .7rem; padding: .35rem .2rem; margin-bottom: .7rem;
+  }
+  tr:last-child { margin-bottom: 0; }
+  td { border-bottom: 0; padding: .35rem .85rem; }
+  td[data-label]::before {
+    content: attr(data-label);
+    display: block; font-size: .75rem; font-weight: 650;
+    text-transform: uppercase; letter-spacing: .04em;
+    color: var(--muted); margin-bottom: .1rem;
+  }
+  td:first-child { padding-top: .6rem; }
+  td:last-child { padding-bottom: .6rem; }
+}
+
+.updated {
+  display: inline-block; font-size: .87rem; color: var(--muted);
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 999px; padding: .2rem .75rem; margin-bottom: 1.6rem;
+}
+.toc {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: .8rem; padding: .9rem 1.1rem; margin: 0 0 2rem;
+  box-shadow: var(--shadow);
+}
+.toc summary { cursor: pointer; font-weight: 650; font-size: .95rem; }
+.toc ol { margin: .8rem 0 .2rem; padding-left: 1.2rem; font-size: .95rem; }
+.toc li { margin: .2rem 0; }
+
+footer.site {
+  margin-top: 3.5rem; padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-size: .88rem; color: var(--muted);
+}
+footer.site p { margin: .25rem 0; }
+
+/* Cartes de l'accueil */
+.cards { display: grid; gap: .9rem; margin: 2rem 0; }
+@media (min-width: 34rem) { .cards { grid-template-columns: 1fr 1fr; } }
+.card {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: .9rem; padding: 1.15rem 1.2rem; box-shadow: var(--shadow);
+}
+.card:hover { border-color: var(--brand); }
+.card h2 { margin: 0 0 .35rem; font-size: 1.05rem; color: var(--brand); padding: 0; }
+.card p { margin: 0; font-size: .93rem; color: var(--muted); }</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="dot"></span>Nido</a>
+    <nav class="docs"><a href="privacy.html" aria-current="page">Confidentialité</a><a href="terms.html">CGU</a></nav>
+  </div>
+</header>
+<div class="wrap">
+<main>
+<h1 id="politique-de-confidentialite-nido">Politique de confidentialité — Nido</h1>
+<p class="updated">Dernière mise à jour : 10 août 2026</p>
+<p>Cette politique décrit comment l'application <strong>Nido</strong> (« nous », « l'app ») collecte, utilise et protège tes données personnelles ainsi que celles de ton enfant. Elle respecte le <strong>Règlement Général sur la Protection des Données</strong> (RGPD, Règlement UE 2016/679) et la loi française <strong>Informatique et Libertés</strong>.</p>
+<details class="toc"><summary>Sommaire</summary><ol><li><a href="#1-responsable-du-traitement">1. Responsable du traitement</a></li><li><a href="#2-donnees-collectees">2. Données collectées</a></li><li><a href="#3-finalites-du-traitement">3. Finalités du traitement</a></li><li><a href="#4-base-legale">4. Base légale</a></li><li><a href="#5-destinataires-des-donnees">5. Destinataires des données</a></li><li><a href="#6-duree-de-conservation">6. Durée de conservation</a></li><li><a href="#7-securite">7. Sécurité</a></li><li><a href="#8-tes-droits">8. Tes droits</a></li><li><a href="#9-suppression-du-compte">9. Suppression du compte</a></li><li><a href="#10-mineurs">10. Mineurs</a></li><li><a href="#11-modifications">11. Modifications</a></li><li><a href="#12-contact">12. Contact</a></li></ol></details><hr />
+<h2 id="1-responsable-du-traitement">1. Responsable du traitement</h2>
+<p><strong>Nido</strong> est édité par <strong>[ÉDITEUR — À COMPLÉTER : nom ou raison sociale]</strong></p>
+<ul><li>Adresse : <strong>[À COMPLÉTER : adresse postale]</strong></li><li>Email : <code>support@nido-app.com</code></li><li>Représentant légal : <strong>[À COMPLÉTER : nom du responsable]</strong></li></ul>
+<p>Pour toute question relative à tes données, contacte-nous à l'adresse ci-dessus. Tu peux également déposer une réclamation auprès de la <strong>CNIL</strong> (<a href="https://www.cnil.fr" rel="noopener">https://www.cnil.fr</a>).</p>
+<hr />
+<h2 id="2-donnees-collectees">2. Données collectées</h2>
+<h3 id="2-1-donnees-de-compte">2.1 Données de compte</h3>
+<ul><li><strong>Adresse email</strong> (création + connexion)</li><li><strong>Mot de passe</strong> (stocké haché, jamais en clair, via Supabase Auth)</li><li><strong>Date de naissance</strong> (optionnelle, pour fêter ton anniversaire dans l'app)</li><li><strong>Prénom / nom affiché</strong> (optionnel, choisi par toi)</li><li><strong>Couleur d'identification</strong> (optionnelle, pour distinguer les parents dans les statistiques d'équipe)</li></ul>
+<h3 id="2-2-donnees-du-bebe">2.2 Données du bébé</h3>
+<ul><li><strong>Prénom</strong>, <strong>date de naissance</strong>, <strong>sexe</strong> (optionnels)</li><li><strong>Photo de profil</strong> (optionnelle)</li><li><strong>Identité administrative</strong> (optionnelle) : numéro de sécurité sociale, groupe sanguin, allergies, médecin traitant, mutuelle</li></ul>
+<h3 id="2-3-donnees-de-suivi-quotidien">2.3 Données de suivi quotidien</h3>
+<ul><li><strong>Tétées</strong> : horaires, durée, côté (gauche/droit/biberon), quantité</li><li><strong>Couches</strong> : horaires, type (pipi/caca)</li><li><strong>Sommeil</strong> : horaires de début et de fin, type (sieste / nuit)</li><li><strong>Bains</strong> : horaires</li><li><strong>Poids / Taille</strong> : valeurs et dates de mesure</li><li><strong>Températures</strong> : valeurs et dates de mesure</li><li><strong>Médicaments</strong> : nom, dose, horaires</li><li><strong>Rendez-vous médicaux</strong> : motif, date, lieu</li><li><strong>Pleurs</strong> : horaire, causes suggérées par l'app, cause que tu confirmes</li><li><strong>Notes libres</strong> : observations rédigées par toi</li><li><strong>Réactions et messages</strong> échangés avec ton co-parent sur une activité</li><li><strong>Liste de courses</strong> : éléments et leur statut</li></ul>
+<h3 id="2-4-photos-et-documents-uploades">2.4 Photos et documents uploadés</h3>
+<ul><li><strong>Souvenirs photo</strong> : images que tu choisis d'enregistrer pour documenter les premiers mois</li><li><strong>Documents médicaux</strong> : ordonnances, comptes rendus, carnet de santé scanné, justificatifs d'assurance (uploadés volontairement par toi)</li></ul>
+<h3 id="2-5-microphone-analyse-des-pleurs">2.5 Microphone — analyse des pleurs</h3>
+<p>Nido propose une fonction <strong>facultative</strong> d'analyse des pleurs. Le microphone n'est actif <strong>que pendant que tu maintiens le doigt appuyé</strong> sur le bouton d'écoute, pour <strong>10 secondes maximum</strong>. Dès que tu relâches, l'écoute s'arrête.</p>
+<p>Pendant ces quelques secondes :</p>
+<ul><li>Le son est analysé <strong>intégralement sur ton téléphone</strong> : intensité, hauteur (pitch), alternance entre cris et pauses, puis un petit classifieur embarqué dans l'app (YAMNet) répond à une seule question — « ce que j'entends ressemble-t-il à un pleur de bébé ? ».</li><li><strong>Aucun fichier audio n'est créé.</strong> Le son ne vit qu'en mémoire vive le temps de la prise et disparaît avec elle.</li><li><strong>Aucun son n'est envoyé sur internet</strong> — ni à nos serveurs, ni à un tiers, ni à un service d'intelligence artificielle externe.</li><li><strong>Personne ne peut écouter quoi que ce soit</strong>, nous compris : il n'y a pas d'enregistrement à écouter.</li></ul>
+<p>Ce qui est conservé, uniquement si tu enregistres le résultat de l'analyse : quelques <strong>nombres</strong> décrivant la prise — durée, intensité moyenne, hauteur médiane en hertz, proportion de cri, et un score de vraisemblance « pleur » entre 0 et 1. Ces valeurs ne permettent ni de reconstituer le son, ni de reconnaître une voix.</p>
+<p>Tu peux refuser la permission micro, ou lancer l'analyse <strong>sans le micro</strong> (lien « Analyser sans le micro ») : l'app reste pleinement fonctionnelle, l'analyse se fait alors sur le contexte seul (heure de la dernière tétée, du dernier change, du dernier sommeil…).</p>
+<h3 id="2-6-donnees-techniques">2.6 Données techniques</h3>
+<ul><li><strong>Tokens de notifications push</strong> (pour t'envoyer les rappels que tu as activés)</li><li><strong>Préférences d'affichage</strong> (thème clair/sombre, réglages d'alerte)</li><li><strong>Rapports d'erreur anonymisés</strong> (pour corriger les bugs). Ils sont traités par <strong>Sentry</strong> (cf. §5) et <strong>filtrés avant envoi</strong> : ni adresse IP, ni user-agent, ni prénom, ni note, ni mesure, ni photo.</li><li><strong>File d'attente hors-ligne</strong> stockée dans une base locale sur ton téléphone : quand tu logges une tétée sans réseau, l'écriture attend là jusqu'au retour de la connexion, puis est effacée.</li></ul>
+<h3 id="2-7-donnees-non-collectees">2.7 Données NON collectées</h3>
+<p>Nous ne collectons <strong>pas</strong> :</p>
+<ul><li>Ta localisation GPS</li><li>Tes contacts</li><li>Ton calendrier</li><li>Ton historique de navigation</li><li>Aucun enregistrement audio</li><li>Aucune donnée publicitaire ou de tracking tiers</li></ul>
+<h3 id="2-8-autorisations-demandees-sur-ton-telephone">2.8 Autorisations demandées sur ton téléphone</h3>
+<p>Toutes sont <strong>facultatives</strong> et refusables ; l'app fonctionne sans.</p>
+<div class="table-wrap"><table><thead><tr><th>Autorisation</th><th>À quoi elle sert</th><th>Quand</th></tr></thead><tbody><tr><td data-label="Autorisation"><strong>Microphone</strong></td><td data-label="À quoi elle sert">Analyser les pleurs (cf. §2.5)</td><td data-label="Quand">Uniquement doigt appuyé, 10 s max</td></tr><tr><td data-label="Autorisation"><strong>Photos / Appareil photo</strong></td><td data-label="À quoi elle sert">Choisir la photo du bébé, ajouter un souvenir ou un document</td><td data-label="Quand">Au moment où tu appuies sur « ajouter »</td></tr><tr><td data-label="Autorisation"><strong>Enregistrement dans la pellicule</strong></td><td data-label="À quoi elle sert">Sauvegarder une photo souvenir sur ton téléphone</td><td data-label="Quand">À ta demande</td></tr><tr><td data-label="Autorisation"><strong>Notifications</strong></td><td data-label="À quoi elle sert">Rappels et messages de ton co-parent</td><td data-label="Quand">Révocable dans les réglages</td></tr><tr><td data-label="Autorisation"><strong>Face ID / empreinte</strong></td><td data-label="À quoi elle sert">Verrouiller l'app localement</td><td data-label="Quand">Si tu actives le verrou</td></tr></tbody></table></div>
+<hr />
+<h2 id="3-finalites-du-traitement">3. Finalités du traitement</h2>
+<p>Tes données sont utilisées <strong>uniquement</strong> pour :</p>
+<ol><li><strong>Faire fonctionner l'app</strong> : afficher l'historique, synchroniser entre les co-parents, envoyer les rappels que tu as configurés.</li><li><strong>Te permettre de récupérer ton compte</strong> (email + mot de passe).</li><li><strong>Mesurer et améliorer ton expérience</strong> (rapports d'erreur anonymisés).</li><li><strong>Te contacter</strong> en cas de problème grave de sécurité ou de fin de service.</li></ol>
+<p>Nous <strong>ne</strong> vendons <strong>jamais</strong> tes données. Nous <strong>ne</strong> les utilisons <strong>jamais</strong> pour de la publicité, ni pour entraîner un modèle d'intelligence artificielle. Aucune donnée médicale ni photo n'est analysée par un humain ou par un algorithme de profilage.</p>
+<p>Les suggestions de l'app (fenêtres de sieste, causes probables de pleurs) sont calculées <strong>sur ton téléphone</strong>, à partir de ton propre historique. Aucun profilage produisant des effets juridiques n'est effectué au sens de l'article 22 du RGPD.</p>
+<hr />
+<h2 id="4-base-legale">4. Base légale</h2>
+<p>Conformément à l'article 6 du RGPD :</p>
+<ul><li><strong>Exécution du contrat</strong> (art. 6.1.b) : pour fournir le service auquel tu as souscrit.</li><li><strong>Consentement</strong> (art. 6.1.a) : pour les notifications push et pour l'accès au microphone (révocables à tout moment).</li><li><strong>Consentement explicite</strong> (art. 9.2.a) : pour les données de santé (mesures, températures, médicaments, documents médicaux), que tu saisis volontairement.</li><li><strong>Intérêt légitime</strong> (art. 6.1.f) : pour les rapports d'erreur anonymisés.</li></ul>
+<hr />
+<h2 id="5-destinataires-des-donnees">5. Destinataires des données</h2>
+<p>Tes données sont stockées et traitées par :</p>
+<ul><li><strong>Supabase Inc.</strong> (<a href="https://supabase.com" rel="noopener">https://supabase.com</a>) — hébergement base de données + stockage fichiers. Région : <strong>Union européenne (Irlande)</strong>.</li><li><strong>Sentry / Functional Software, Inc.</strong> (<a href="https://sentry.io" rel="noopener">https://sentry.io</a>) — rapports d'erreur techniques. Région : <strong>Union européenne (Allemagne)</strong>. Ne reçoit aucune donnée personnelle ni donnée bébé (cf. §2.6).</li><li><strong>Expo / 650 Industries, Inc.</strong> (<a href="https://expo.dev" rel="noopener">https://expo.dev</a>) — acheminement des notifications push. Reçoit le token de notification et le texte du rappel, jamais l'historique du bébé.</li></ul>
+<p>Aucun autre tiers n'a accès à tes données. Il n'y a <strong>aucun SDK publicitaire ni analytique comportemental</strong> dans l'app.</p>
+<hr />
+<h2 id="6-duree-de-conservation">6. Durée de conservation</h2>
+<ul><li><strong>Compte actif</strong> : conservation tant que tu utilises l'app.</li><li><strong>Compte inactif</strong> : après <strong>24 mois</strong> sans connexion, nous t'envoyons un email de préavis puis supprimons le compte et ses données.</li><li><strong>Compte supprimé</strong> : effacement immédiat et définitif lors de l'action « Supprimer mon compte » (cf. §9).</li><li><strong>Rapports d'erreur</strong> : 90 jours maximum, puis purge automatique.</li><li><strong>Audio des pleurs</strong> : sans objet — il n'est jamais conservé.</li></ul>
+<hr />
+<h2 id="7-securite">7. Sécurité</h2>
+<ul><li>Connexion chiffrée <strong>TLS</strong> entre l'app et nos serveurs.</li><li>Mot de passe haché (jamais stocké en clair).</li><li>Photos et documents stockés dans des <strong>buckets privés</strong> : seuls les membres autorisés de ta famille (toi et tes co-parents invités) peuvent y accéder, via des URLs signées à durée limitée.</li><li><strong>Row-Level Security</strong> (RLS) Postgres : impossible techniquement d'accéder aux données d'une autre famille.</li><li><strong>Mode « village »</strong> : une personne invitée avec le code intervenant (nounou, grands-parents) peut logger le quotidien mais <strong>ne voit ni les documents médicaux ni le numéro de sécurité sociale</strong>.</li><li><strong>Verrou biométrique</strong> optionnel (Face ID, empreinte) à activer dans les réglages.</li></ul>
+<hr />
+<h2 id="8-tes-droits">8. Tes droits</h2>
+<p>Conformément aux articles 15 à 22 du RGPD, tu disposes des droits suivants :</p>
+<div class="table-wrap"><table><thead><tr><th>Droit</th><th>Comment l'exercer</th></tr></thead><tbody><tr><td data-label="Droit"><strong>Accès</strong> à tes données</td><td data-label="Comment l'exercer">Email à <code>support@nido-app.com</code></td></tr><tr><td data-label="Droit"><strong>Rectification</strong></td><td data-label="Comment l'exercer">Directement dans l'app (Plus &gt; Famille / Bébés)</td></tr><tr><td data-label="Droit"><strong>Effacement (« droit à l'oubli »)</strong></td><td data-label="Comment l'exercer">Plus &gt; Réglages &gt; « Supprimer mon compte »</td></tr><tr><td data-label="Droit"><strong>Limitation du traitement</strong></td><td data-label="Comment l'exercer">Email à <code>support@nido-app.com</code></td></tr><tr><td data-label="Droit"><strong>Portabilité</strong></td><td data-label="Comment l'exercer">Plus &gt; « Exporter PDF », ou email pour un export brut</td></tr><tr><td data-label="Droit"><strong>Opposition</strong></td><td data-label="Comment l'exercer">Email à <code>support@nido-app.com</code></td></tr><tr><td data-label="Droit"><strong>Retrait du consentement</strong> (notifications, micro)</td><td data-label="Comment l'exercer">Réglages de l'app et de ton téléphone</td></tr></tbody></table></div>
+<p>Délai de réponse : <strong>1 mois</strong> maximum.</p>
+<hr />
+<h2 id="9-suppression-du-compte">9. Suppression du compte</h2>
+<p>Tu peux supprimer ton compte à tout moment, <strong>sans contact préalable</strong>, depuis l'app :</p>
+<blockquote><p><strong>Plus → Réglages → Supprimer mon compte</strong></p></blockquote>
+<p>L'effacement est <strong>immédiat et définitif</strong> :</p>
+<ul><li>Si tu es seul·e dans ta famille : toutes les données du bébé, photos, documents et historique sont effacés.</li><li>Si tu partages la famille avec un co-parent : la famille reste active pour lui/elle, et seul ton compte personnel + ton lien de membre sont supprimés. Tes contributions passées (tétées, couches, etc.) restent visibles mais ton nom n'y est plus rattaché.</li></ul>
+<hr />
+<h2 id="10-mineurs">10. Mineurs</h2>
+<p>Nido est utilisé par <strong>les parents</strong> pour suivre <strong>leur bébé</strong>. Aucun compte ne peut être créé par un mineur. L'enfant suivi n'a pas de compte propre — ses données sont gérées sous la responsabilité des parents titulaires de l'autorité parentale.</p>
+<hr />
+<h2 id="11-modifications">11. Modifications</h2>
+<p>Cette politique peut être mise à jour. Toute modification substantielle te sera notifiée dans l'app au moins <strong>30 jours</strong> avant son entrée en vigueur, avec possibilité de refuser et de supprimer ton compte.</p>
+<hr />
+<h2 id="12-contact">12. Contact</h2>
+<p>Pour toute question : <strong><code>support@nido-app.com</code></strong></p>
+<p>Pour signaler un incident de sécurité : même adresse, mention <code>[SÉCURITÉ]</code> dans l'objet.</p>
+</main>
+<footer class="site">
+  <p>Nido — application de suivi du quotidien de bébé.</p>
+  <p>Contact : <a href="mailto:support@nido-app.com">support@nido-app.com</a></p>
+</footer>
+</div>
+</body>
+</html>

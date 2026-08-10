@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Conditions générales d'utilisation — Nido</title>
+<meta name="description" content="Les règles d'usage de l'application Nido." />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#208AEF" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0d1218" media="(prefers-color-scheme: dark)" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Conditions générales d'utilisation — Nido" />
+<meta property="og:description" content="Les règles d'usage de l'application Nido." />
+<meta property="og:locale" content="fr_FR" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23208AEF'/%3E%3Cpath d='M9 22V10l14 12V10' stroke='white' stroke-width='3.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+<style>:root {
+  color-scheme: light dark;
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --text: #14202e;
+  --muted: #5a6b80;
+  --line: #dfe6ef;
+  --brand: #1b6fd0;
+  --brand-soft: #eaf2fd;
+  --code-bg: #eef2f7;
+  --shadow: 0 1px 2px rgba(20, 32, 46, .05), 0 12px 32px rgba(20, 32, 46, .06);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1218;
+    --surface: #151c25;
+    --text: #e7edf5;
+    --muted: #97a6b8;
+    --line: #26313d;
+    --brand: #6dabf5;
+    --brand-soft: #17263a;
+    --code-bg: #1d262f;
+    --shadow: none;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.15rem 5rem; }
+
+header.site {
+  border-bottom: 1px solid var(--line);
+  background: var(--surface);
+}
+header.site .wrap { padding-top: 1.5rem; padding-bottom: 0; }
+.brand {
+  display: inline-flex; align-items: center; gap: .6rem;
+  font-weight: 700; font-size: 1.15rem; letter-spacing: -.01em;
+  color: var(--text); text-decoration: none;
+}
+.brand .dot {
+  width: 1.6rem; height: 1.6rem; border-radius: .55rem;
+  background: linear-gradient(140deg, #3c87f7, #1b6fd0);
+  display: inline-block;
+}
+nav.docs { display: flex; gap: .35rem; margin-top: 1.15rem; flex-wrap: wrap; }
+nav.docs a {
+  padding: .5rem .85rem; border-radius: .55rem .55rem 0 0;
+  font-size: .93rem; font-weight: 600; text-decoration: none;
+  color: var(--muted); border: 1px solid transparent; border-bottom: none;
+}
+nav.docs a:hover { color: var(--text); }
+nav.docs a[aria-current="page"] {
+  color: var(--brand); background: var(--bg);
+  border-color: var(--line); margin-bottom: -1px;
+}
+
+main { margin-top: 2.25rem; }
+h1 {
+  font-size: clamp(1.65rem, 5vw, 2.15rem); line-height: 1.2;
+  letter-spacing: -.02em; margin: 0 0 .6rem;
+}
+h2 {
+  font-size: 1.22rem; letter-spacing: -.01em;
+  margin: 2.6rem 0 .75rem; padding-top: .35rem;
+  scroll-margin-top: 1rem;
+}
+h3 { font-size: 1.03rem; margin: 1.7rem 0 .5rem; color: var(--text); }
+p { margin: 0 0 1rem; }
+a { color: var(--brand); text-decoration-thickness: 1px; text-underline-offset: 2px; }
+strong { font-weight: 650; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2.4rem 0; }
+ul, ol { margin: 0 0 1rem; padding-left: 1.3rem; }
+li { margin: .3rem 0; }
+li::marker { color: var(--muted); }
+code {
+  background: var(--code-bg); border-radius: .3rem;
+  padding: .12em .38em; font-size: .88em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  overflow-wrap: anywhere;
+}
+blockquote {
+  margin: 1.2rem 0; padding: .85rem 1.1rem;
+  background: var(--brand-soft); border-left: 3px solid var(--brand);
+  border-radius: 0 .5rem .5rem 0;
+}
+blockquote p { margin: 0; }
+
+.table-wrap {
+  overflow-x: auto; margin: 1.2rem 0;
+  border: 1px solid var(--line); border-radius: .7rem;
+  background: var(--surface);
+}
+table { border-collapse: collapse; width: 100%; font-size: .95rem; }
+th, td { text-align: left; padding: .65rem .85rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-weight: 650; background: var(--brand-soft); white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+
+/* Mobile : le tableau devient une pile de blocs libellés. */
+@media (max-width: 33rem) {
+  .table-wrap { overflow-x: visible; background: transparent; border: 0; border-radius: 0; }
+  table, tbody, tr, td { display: block; width: 100%; }
+  thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  tr {
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: .7rem; padding: .35rem .2rem; margin-bottom: .7rem;
+  }
+  tr:last-child { margin-bottom: 0; }
+  td { border-bottom: 0; padding: .35rem .85rem; }
+  td[data-label]::before {
+    content: attr(data-label);
+    display: block; font-size: .75rem; font-weight: 650;
+    text-transform: uppercase; letter-spacing: .04em;
+    color: var(--muted); margin-bottom: .1rem;
+  }
+  td:first-child { padding-top: .6rem; }
+  td:last-child { padding-bottom: .6rem; }
+}
+
+.updated {
+  display: inline-block; font-size: .87rem; color: var(--muted);
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 999px; padding: .2rem .75rem; margin-bottom: 1.6rem;
+}
+.toc {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: .8rem; padding: .9rem 1.1rem; margin: 0 0 2rem;
+  box-shadow: var(--shadow);
+}
+.toc summary { cursor: pointer; font-weight: 650; font-size: .95rem; }
+.toc ol { margin: .8rem 0 .2rem; padding-left: 1.2rem; font-size: .95rem; }
+.toc li { margin: .2rem 0; }
+
+footer.site {
+  margin-top: 3.5rem; padding-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  font-size: .88rem; color: var(--muted);
+}
+footer.site p { margin: .25rem 0; }
+
+/* Cartes de l'accueil */
+.cards { display: grid; gap: .9rem; margin: 2rem 0; }
+@media (min-width: 34rem) { .cards { grid-template-columns: 1fr 1fr; } }
+.card {
+  display: block; text-decoration: none; color: inherit;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: .9rem; padding: 1.15rem 1.2rem; box-shadow: var(--shadow);
+}
+.card:hover { border-color: var(--brand); }
+.card h2 { margin: 0 0 .35rem; font-size: 1.05rem; color: var(--brand); padding: 0; }
+.card p { margin: 0; font-size: .93rem; color: var(--muted); }</style>
+</head>
+<body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="dot"></span>Nido</a>
+    <nav class="docs"><a href="privacy.html">Confidentialité</a><a href="terms.html" aria-current="page">CGU</a></nav>
+  </div>
+</header>
+<div class="wrap">
+<main>
+<h1 id="conditions-generales-d-utilisation-nido">Conditions Générales d'Utilisation — Nido</h1>
+<p class="updated">Dernière mise à jour : 10 août 2026</p>
+<details class="toc"><summary>Sommaire</summary><ol><li><a href="#1-objet">1. Objet</a></li><li><a href="#2-acces-au-service">2. Accès au service</a></li><li><a href="#3-inscription-et-compte">3. Inscription et compte</a></li><li><a href="#4-nature-du-service-avertissement-important">4. Nature du service — avertissement important</a></li><li><a href="#5-donnees-personnelles">5. Données personnelles</a></li><li><a href="#6-propriete-intellectuelle">6. Propriété intellectuelle</a></li><li><a href="#7-disponibilite-du-service">7. Disponibilité du service</a></li><li><a href="#8-resiliation">8. Résiliation</a></li><li><a href="#9-responsabilite">9. Responsabilité</a></li><li><a href="#10-modifications-des-cgu">10. Modifications des CGU</a></li><li><a href="#11-droit-applicable-et-litiges">11. Droit applicable et litiges</a></li><li><a href="#12-contact">12. Contact</a></li></ol></details><hr />
+<h2 id="1-objet">1. Objet</h2>
+<p>Les présentes Conditions Générales d'Utilisation (« CGU ») régissent l'usage de l'application mobile <strong>Nido</strong> (« l'app »), éditée par <strong>[ÉDITEUR — À COMPLÉTER : nom ou raison sociale]</strong> (« l'éditeur »), permettant aux parents de suivre le quotidien de leur bébé (tétées, couches, sommeil, croissance, santé, souvenirs, etc.).</p>
+<p>L'utilisation de l'app implique l'acceptation pleine et entière des présentes CGU.</p>
+<hr />
+<h2 id="2-acces-au-service">2. Accès au service</h2>
+<p>L'app est aujourd'hui accessible <strong>gratuitement, dans son intégralité</strong>. Aucun achat intégré ni abonnement n'est proposé à ce jour. Si une offre payante venait à être introduite, elle serait annoncée dans l'app au moins <strong>30 jours</strong> à l'avance et les fonctionnalités déjà utilisées resteraient accessibles pendant cette période.</p>
+<p>L'accès nécessite :</p>
+<ul><li>Un téléphone iOS ou Android récent</li><li>Une connexion internet (les saisies faites hors-ligne sont mises en file d'attente et synchronisées au retour du réseau)</li><li>Une adresse email valide pour la création du compte</li></ul>
+<hr />
+<h2 id="3-inscription-et-compte">3. Inscription et compte</h2>
+<p>L'inscription se fait via email + mot de passe. L'utilisateur garantit l'exactitude des informations fournies. Le mot de passe est strictement personnel et confidentiel.</p>
+<p>Un compte peut inviter d'autres personnes dans sa famille via un code d'invitation. Deux niveaux existent : <strong>parent</strong> (accès complet) et <strong>intervenant</strong> (nounou, grands-parents — peut logger le quotidien mais n'accède ni aux documents médicaux ni aux données d'identité administrative). L'utilisateur qui partage un code est responsable des personnes à qui il le transmet.</p>
+<p>L'éditeur se réserve le droit de suspendre tout compte présentant un usage frauduleux, abusif, ou en violation des présentes CGU.</p>
+<hr />
+<h2 id="4-nature-du-service-avertissement-important">4. Nature du service — avertissement important</h2>
+<p><strong>Nido est un outil de suivi domestique.</strong> Ce n'est <strong>pas un dispositif médical</strong> au sens du Règlement (UE) 2017/745. Il ne pose aucun diagnostic et ne remplace pas l'avis d'un professionnel de santé (pédiatre, sage-femme, médecin, puéricultrice).</p>
+<p>Sont <strong>purement indicatifs</strong>, et calculés à partir de moyennes statistiques et de l'historique que tu as toi-même saisi :</p>
+<ul><li>les <strong>seuils d'alerte</strong> (cadence des tétées, délai sans couche, température) ;</li><li>les <strong>prédictions de sieste et de coucher</strong> (fenêtres d'éveil) ;</li><li>les <strong>courbes de croissance</strong> et percentiles OMS ;</li><li>l'<strong>analyse des pleurs</strong>, qui propose des causes *possibles* et ne constitue en aucun cas un avis médical — un pleur peut avoir une cause que l'app ne connaît pas.</li></ul>
+<p><strong>En cas de doute sur la santé de ton enfant, de fièvre, de pleurs inhabituels ou prolongés, consulte immédiatement un professionnel de santé.</strong> En cas d'urgence, appelle le <strong>15</strong> (SAMU) ou le <strong>112</strong>.</p>
+<p>L'éditeur ne saurait être tenu responsable d'une décision prise sur la base unique des informations affichées dans l'app.</p>
+<hr />
+<h2 id="5-donnees-personnelles">5. Données personnelles</h2>
+<p>Le traitement des données est régi par la <strong>Politique de confidentialité</strong>, accessible depuis l'app et publiée en ligne. Elle fait partie intégrante des présentes CGU.</p>
+<p>L'analyse des pleurs utilise le microphone <strong>uniquement pendant que tu maintiens le bouton appuyé</strong>, traite le son <strong>sur ton téléphone</strong>, n'en enregistre aucun fichier et n'en transmet rien. Elle est facultative.</p>
+<hr />
+<h2 id="6-propriete-intellectuelle">6. Propriété intellectuelle</h2>
+<p>Tous les éléments de l'app (code, design, textes, logos) sont la propriété exclusive de l'éditeur. Toute reproduction, modification ou diffusion non autorisée est interdite.</p>
+<p>Les données saisies par l'utilisateur (photos, notes, historique) restent sa propriété pleine et entière. L'éditeur n'acquiert aucun droit dessus et s'engage à les supprimer définitivement sur demande.</p>
+<hr />
+<h2 id="7-disponibilite-du-service">7. Disponibilité du service</h2>
+<p>L'éditeur s'efforce d'assurer une disponibilité maximale mais ne garantit pas une absence totale d'interruptions (maintenance, panne du prestataire d'hébergement, mise à jour). Aucune indemnisation ne peut être réclamée en cas d'interruption temporaire.</p>
+<p>L'utilisateur est invité à utiliser la fonction <strong>« Exporter PDF »</strong> s'il souhaite conserver une copie de son historique hors de l'app.</p>
+<hr />
+<h2 id="8-resiliation">8. Résiliation</h2>
+<p>L'utilisateur peut supprimer son compte à tout moment depuis l'app (<strong>Plus → Réglages → Supprimer mon compte</strong>). La suppression est immédiate et définitive.</p>
+<hr />
+<h2 id="9-responsabilite">9. Responsabilité</h2>
+<p>L'éditeur ne peut être tenu responsable des préjudices indirects (perte de données, manque à gagner, etc.).</p>
+<p>Les présentes limitations ne s'appliquent pas en cas de faute lourde ou dolosive, ni aux cas où la loi française interdit de les écarter. Les dispositions impératives du Code de la consommation applicables aux consommateurs demeurent en tout état de cause acquises à l'utilisateur.</p>
+<hr />
+<h2 id="10-modifications-des-cgu">10. Modifications des CGU</h2>
+<p>L'éditeur peut modifier les présentes CGU. Toute modification substantielle sera notifiée dans l'app au moins 30 jours avant son entrée en vigueur. Le maintien de l'utilisation après cette période vaut acceptation.</p>
+<hr />
+<h2 id="11-droit-applicable-et-litiges">11. Droit applicable et litiges</h2>
+<p>Les présentes CGU sont régies par le <strong>droit français</strong>.</p>
+<p>En cas de litige, l'utilisateur est invité à contacter l'éditeur en priorité. À défaut d'accord amiable, il peut recourir gratuitement à un <strong>médiateur de la consommation</strong> ou saisir la plateforme européenne de règlement en ligne des litiges (<a href="https://ec.europa.eu/consumers/odr" rel="noopener">https://ec.europa.eu/consumers/odr</a>). À défaut, les juridictions françaises compétentes sont saisies.</p>
+<hr />
+<h2 id="12-contact">12. Contact</h2>
+<p>Pour toute question : <strong><code>support@nido-app.com</code></strong></p>
+</main>
+<footer class="site">
+  <p>Nido — application de suivi du quotidien de bébé.</p>
+  <p>Contact : <a href="mailto:support@nido-app.com">support@nido-app.com</a></p>
+</footer>
+</div>
+</body>
+</html>
