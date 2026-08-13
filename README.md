@@ -106,9 +106,9 @@ curl -sI https://debugd0tlog.github.io/nido-legal/terms.html   | head -1
       représentant légal dans `docs/PRIVACY.md` §1 et `docs/TERMS.md` §1.
       **Le RGPD exige un responsable de traitement identifiable** ; en l'état
       les deux pages affichent le placeholder en clair.
-- [ ] Faire pointer `support@nido-app.com` sur une boîte réellement relevée,
-      ou le remplacer partout (3 fichiers : les deux `.md` et
-      `src/constants/legal.ts`).
+- [x] Adresse support : `nidosupportapp@gmail.com` (boîte Gmail dédiée,
+      relevée — remplacée partout le 2026-08-13 : les deux `.md`,
+      `src/constants/legal.ts`, `build.mjs`).
 - [ ] Déclarer la permission **microphone** dans Google Play Data Safety et
       dans le questionnaire App Store Privacy (traitement local, aucun
       enregistrement, aucune transmission — cf. §2.5 de la politique).
